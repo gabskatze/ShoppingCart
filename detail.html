@@ -1,0 +1,194 @@
+<!DOCTYPE HTML>
+<!--
+	Monochromed by TEMPLATED
+    templated.co @templatedco
+    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+
+<head>
+	<title>Monochromed by TEMPLATED</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+	<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="js/skel.min.js"></script>
+	<script src="js/init.js"></script>
+	<script src="js/products.js"></script>
+	<noscript>
+		<link rel="stylesheet" href="css/skel-noscript.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</noscript>
+	<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+</head>
+
+<body onload="load()">
+
+	<!-- Header -->
+	<div id="header">
+		<div class="row">
+			<div class="container">
+
+				<!-- Logo -->
+				<div id="logo">
+					<h1>
+						<a href="#">Your shoes, your own style!</a>
+					</h1>
+					<span>Design by Gabriela Sanchez</span>
+				</div>
+
+				<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li>
+							<a href="index.html">Homepage</a>
+						</li>
+					</ul>
+				</nav>
+
+			</div>
+		</div>
+
+	</div>
+	<!-- Header -->
+
+	<!-- Main -->
+
+	<div id="main">
+		<div class="container">
+
+			<div>
+				<section>
+					<div class="container">
+						<h2>Please select your size</h2>
+						<div class="row">
+							<table class="table table-condensed table-responsive">
+								<thead>
+									<tr>
+										<th>Item</th>
+										<th>Details</th>
+										<th>Size</th>
+										<th>Price</th>
+										<th>Add</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="col-md-2">
+											<a href="#">
+												<img id="myimage" src="images/shoes1.jpg" class="img-thumbnail" alt="" />
+											</a>
+										</td>
+										<td>
+											<p id="mydetails" class="hidden-xs">
+												Man Made Material
+												<br> FITTING TIPS: TRUE TO SIZE, WIDE WIDTH CUSTOMERS ORDER HALF SIZE UP.
+												<br> Heel height: 5" (approx)
+												<br> Platform height: 1.25" (Approx)
+												<br> Removabel ankle strap for classic slip on look
+												<br> Finished with a slightly padded faux leather insole
+											</p>
+											<p class="visible-xs">
+												Man Made
+												<br> 5"
+												<br> 1.25"
+											</p>
+										</td>
+										<td>
+											<select id="mysize" class="form-control">
+												<option>5 B(M) US</option>
+												<option>5.5 B(M) US</option>
+												<option>6 B(M) US</option>
+												<option>6.5 B(M) US</option>
+												<option>7 B(M) US</option>
+												<option>7.5 B(M) US</option>
+												<option>8 B(M) US</option>
+												<option>8.5 B(M) US</option>
+												<option>9 B(M) US</option>
+												<option>9.5 B(M) US</option>
+												<option>10 B(M) US</option>
+												<option>10.5 B(M) US</option>
+											</select>
+										</td>
+										<td>
+											<p class="form-control-static"><span id="myprice"></span> USD</p>
+										</td>
+										<td>
+											<button id="myBtn" type="button" class="btn btn-success" onclick="addCart();">
+												<span class="glyphicon glyphicon-shopping-cart" ></span>
+											</button>
+
+										</td>
+									</tr>
+
+								</tbody>
+							</table>
+						</div>
+
+					</div>
+				</section>
+			</div>
+			</div>
+			<!--end modal -->
+		</div>
+	</div>
+
+	</div>
+	<!-- Main -->
+
+
+	<!-- Footer -->
+	<div id="footer">
+
+	</div>
+	<!-- Footer -->
+
+	<!-- Copyright -->
+	<div id="copyright">
+		<div class="container">
+			Design:
+			<a href="http://templated.co">Gabriela Sanchez</a>
+
+		</div>
+	</div>
+	<!--script -->
+
+	<!-- <script src="js/jquery-3.2.1.min.js"></script> -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- <script>
+		$(document).ready(function () {
+			$("#myBtn").click(function () {
+				var params = new URLSearchParams(window.location.search);
+				var id = params.get('id');
+				var size = $("#mysize option:selected").text();
+				var price = $("myprice").html();
+				// [
+				//  {id:1, size: "5 B(M) US", price: 540},
+				//  {id:3, size: "5 B(M) US", price:562}
+				//
+				// ]
+				var cart = JSON.parse(localStorage.getItem("cart")) || [];
+				cart.push({id: id, size: size, price: price});
+				localStorage.setItem("cart", JSON.stringify(cart));
+
+
+				//rebuild cart
+				for (var i = 0; i < cart.length; i++) {
+					var cartItem = "<tr>" +
+					"<td>imagen</td>" + "<td>size</td>" + "<td>precio</td>"+
+					"</tr>";
+					$("#cartItems").append(cartItem);
+				}
+
+				$("#myModal").modal();
+			});
+		});
+	</script> -->
+	<script src="js/detail.js"></script>
+</body>
+
+</html>

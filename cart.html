@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<!--
+	Monochromed by TEMPLATED
+    templated.co @templatedco
+    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+
+<head>
+	<title>Monochromed by TEMPLATED</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/lux.bootstrap.css">
+	<link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+	<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="js/skel.min.js"></script>
+	<script src="js/init.js"></script>
+	<script src="js/products.js"></script>
+	<noscript>
+		<link rel="stylesheet" href="css/skel-noscript.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</noscript>
+	<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+</head>
+
+<body onload="load()">
+
+	<!-- Header -->
+	<div id="header">
+		<div class="container">
+
+			<!-- Logo -->
+			<div id="logo">
+				<h1>
+					<a href="#">Your shoes, your own style!</a>
+				</h1>
+				<span>Design by Gabriela Sanchez</span>
+			</div>
+
+			<!-- Nav -->
+			<nav id="nav">
+				<ul>
+					<li>
+						<a href="index.html">Homepage</a>
+					</li>
+				</ul>
+			</nav>
+
+		</div>
+	</div>
+	<!-- Header -->
+
+	<!-- Main -->
+	<div id="main">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-8 col-sm-6">
+					<section>
+						<div class="container">
+							<h2>Please confirm your order</h2>
+							<table id="cart" class="table table-hover table-condensed">
+								<thead>
+									<tr>
+										<th style="width:30%">Product</th>
+										<th style="width:10%">Size</th>
+										<th style="width:8%">Quantity</th>
+										<th style="width:8%">Price</th>
+										<th style="width:22%" class="text-center">Subtotal</th>
+										<th style="width:10%"></th>
+									</tr>
+								</thead>
+								<tbody id="myCartItems">
+									<!-- Trs are loaded in javaScript file (cart.js) -->
+								</tbody>
+								<tfoot>
+									<tr class="visible-xs">
+										<td class="text-center">
+											<strong>Total $
+												<span id="myTotal2"></span>
+											</strong>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a onclick="location.href='index.html'" class="btn btn-warning">
+												<i class="fa fa-angle-left"></i>Continue Shopping</a>
+										</td>
+										<td colspan="3" class="hidden-xs">
+											<strong>Total $
+												<span id="myTotal"></span>
+											</strong>
+										</td>
+										<td>
+											<a class="btn btn-success btn-block" onclick="modal();">Checkout
+												<i class="fa fa-angle-right"></i>
+											</a>
+										</td>
+									</tr>
+								</tfoot>
+							</table>
+
+
+						</div>
+					</section>
+				</div>
+				<div class="col-sm-8 col-sm-6">
+					<section>
+
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--modal -->
+	<div id="modal">
+		<div>
+			<p>Content you want the user to see goes here.</p>
+		</div>
+	</div>
+
+	<!-- Main -->
+	<script src="js/cart.js"></script>
+	<!-- Footer -->
+	<div id="footer">
+
+	</div>
+	<!-- Footer -->
+
+	<!-- Copyright -->
+	<div id="copyright">
+		<div class="container">
+			Design:
+			<a href="http://templated.co">TEMPLATED</a> Images:
+			<a href="http://unsplash.com">Unsplash</a> (
+			<a href="http://unsplash.com/cc0">CC0</a>)
+		</div>
+	</div>
+
+</body>
+
+</html>
